@@ -69,8 +69,8 @@ public class String2 {
     }
 
     public boolean bobThere(String str) {
-        if (str.length() > 2&&str.length()<8) {
-            for (int i = 0; i < str.length()-2; i++) {
+        if (str.length() > 2 && str.length() < 8) {
+            for (int i = 0; i < str.length() - 2; i++) {
                 if (str.charAt(i) == 'b' && str.charAt(i + 2) == 'b') return true;
             }
             return false;
@@ -79,4 +79,11 @@ public class String2 {
         }
         return false;
     }
+
+    public boolean xyBalance(String str) {
+        int x = str.lastIndexOf('x');
+        int y = str.lastIndexOf('y');
+        return x<=y;
+    }
+
 }
