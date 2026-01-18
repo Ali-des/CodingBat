@@ -83,7 +83,24 @@ public class String2 {
     public boolean xyBalance(String str) {
         int x = str.lastIndexOf('x');
         int y = str.lastIndexOf('y');
-        return x<=y;
+        return x <= y;
     }
+
+    public String mixString(String a, String b) {
+        String result = "";
+        int i = 0;
+
+        while (i < a.length() || i < b.length()) {
+            if (i < a.length()) {
+                result += a.charAt(i);
+            }
+            if (i < b.length()) {
+                result += b.charAt(i);
+            }
+            i++;
+        }
+        return result;
+    }
+
 
 }
