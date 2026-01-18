@@ -227,4 +227,8 @@ public class helloName {
         }
         return result;
     }
+    public String sd(String ss){
+        System.out.println("d");
+        return ss;
+    }
 }
