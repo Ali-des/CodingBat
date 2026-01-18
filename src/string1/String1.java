@@ -1,8 +1,8 @@
 package string1;
 
-public class helloName {
+public class String1 {
     public static void main(String[] args) {
-        helloName helloName = new helloName();
+        String1 helloName = new String1();
         System.out.println(helloName.helloName("Ali"));
     }
 
@@ -226,5 +226,9 @@ public class helloName {
             result += str.substring(2);
         }
         return result;
+    }
+    public String sd(String ss){
+        System.out.println("d");
+        return ss;
     }
 }
